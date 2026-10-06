@@ -18,4 +18,4 @@ jobs:
           node-version: 20
 
       - name: Publicar en Surge
-        run: npx surge --project ./ --domain ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
+        run: npx surge --project ./ --domain "${{ secrets.SURGE_DOMAIN }}" --token "${{ secrets.SURGE_TOKEN }}"
