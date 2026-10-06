@@ -2,9 +2,106 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Pagina en Surge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitTrack - Tu Gestor de Calorías</title>
+    <!-- Tailwind CSS CDN para estilos inmediatos -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>¡Hola! Pagina desplegada con GitHub Actions.</h1>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased">
+
+    <!-- Navegación -->
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center font-bold text-slate-900">F</div>
+            <span class="text-xl font-bold tracking-tight">FitTrack</span>
+        </div>
+        <div class="hidden md:flex gap-8 text-sm text-slate-300">
+            <a href="#caracteristicas" class="hover:text-emerald-400 transition">Características</a>
+            <a href="#como-funciona" class="hover:text-emerald-400 transition">Cómo funciona</a>
+        </div>
+        <a href="#registro" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-4 py-2 rounded-lg text-sm transition">
+            Empezar gratis
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="max-w-4xl mx-auto px-6 pt-20 pb-16 text-center">
+        <span class="inline-block px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-semibold rounded-full border border-emerald-500/20 mb-6">
+            Control nutricional simplificado
+        </span>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+            Alcanza tus objetivos sin contar calorías a ciegas
+        </h1>
+        <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-8">
+            Registra tus comidas, controla tus macronutrientes y mantén un seguimiento diario de tu progreso con una interfaz rápida y clara.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#registro" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-6 py-3 rounded-xl transition">
+                Crear cuenta gratis
+            </a>
+            <a href="#caracteristicas" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-6 py-3 rounded-xl border border-slate-700 transition">
+                Ver funciones
+            </a>
+        </div>
+    </header>
+
+    <!-- Vista previa / Dashboard mockup -->
+    <section class="max-w-5xl mx-auto px-6 mb-24">
+        <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6 shadow-2xl backdrop-blur-sm">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+                <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800">
+                    <p class="text-xs text-slate-400 mb-1">Calorías restantes</p>
+                    <p class="text-2xl font-bold text-emerald-400">1,850 kcal</p>
+                </div>
+                <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800">
+                    <p class="text-xs text-slate-400 mb-1">Proteínas</p>
+                    <p class="text-2xl font-bold text-blue-400">145g / 160g</p>
+                </div>
+                <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800">
+                    <p class="text-xs text-slate-400 mb-1">Carbohidratos</p>
+                    <p class="text-2xl font-bold text-amber-400">210g / 250g</p>
+                </div>
+                <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800">
+                    <p class="text-xs text-slate-400 mb-1">Grasas</p>
+                    <p class="text-2xl font-bold text-rose-400">55g / 65g</p>
+                </div>
+            </div>
+            <div class="bg-slate-900/40 border border-slate-800 rounded-xl p-4 text-sm text-slate-400 text-center">
+                Panel de control en tiempo real para un seguimiento rápido y preciso.
+            </div>
+        </div>
+    </section>
+
+    <!-- Características principales -->
+    <section id="caracteristicas" class="max-w-6xl mx-auto px-6 py-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-12">Todo lo que necesitas para tu nutrición</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <div class="bg-slate-800/40 p-6 rounded-2xl border border-slate-700/50">
+                <div class="w-10 h-10 bg-emerald-500/10 text-emerald-400 rounded-lg flex items-center justify-center font-bold mb-4">⚡</div>
+                <h3 class="text-lg font-bold mb-2">Registro Ultrarrápido</h3>
+                <p class="text-slate-400 text-sm">Busca y añade tus alimentos diarios en segundos sin perder tiempo.</p>
+            </div>
+
+            <div class="bg-slate-800/40 p-6 rounded-2xl border border-slate-700/50">
+                <div class="w-10 h-10 bg-blue-500/10 text-blue-400 rounded-lg flex items-center justify-center font-bold mb-4">📊</div>
+                <h3 class="text-lg font-bold mb-2">Desglose de Macros</h3>
+                <p class="text-slate-400 text-sm">Monitorea tus gramos exactos de proteína, carbohidratos y grasas para optimizar tu rendimiento.</p>
+            </div>
+
+            <div class="bg-slate-800/40 p-6 rounded-2xl border border-slate-700/50">
+                <div class="w-10 h-10 bg-purple-500/10 text-purple-400 rounded-lg flex items-center justify-center font-bold mb-4">🎯</div>
+                <h3 class="text-lg font-bold mb-2">Metas Personalizadas</h3>
+                <p class="text-slate-400 text-sm">Ajusta tus objetivos según estés en fase de volumen, definición o mantenimiento.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 mt-20 py-8 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 FitTrack. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
